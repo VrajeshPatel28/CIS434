@@ -5,3 +5,7 @@ public class Test {
         return (a+b);
     }
 }
+public void printGreeting()
+{
+	System.out.println("Hello from Nihar Patel")
+}
