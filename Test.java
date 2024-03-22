@@ -8,4 +8,6 @@ public class Test {
 public void printGreeting()
 {
 	System.out.println("Hello from Nihar Patel")
+	System.out.println("Hello from Keyur Rana")
+
 }
