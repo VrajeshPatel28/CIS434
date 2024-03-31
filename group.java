@@ -26,6 +26,11 @@ public class group {
         return "";
     }
 
+    //fill in
+    public static String getName() {
+        return "";
+    }
+
     public static String getGroupMembers() {
         return getNamePham() + ", " + getName() + ", " + getName() + ", " + getName();
     }
@@ -33,11 +38,22 @@ public class group {
 
 //(1st method to create) int divide(int num1, int num2) calculates integer division num1/num2, 
 // should throw an Arithmetic exception if num2 is 0, or the result of num1/num2 is not a whole number.
-
+public int divide(int num1, int num2){
+        if (num == 0 || num1 % num2 != 0) {
+            throw new ArithmeticExecption("Cannot divide by 0 or result is nit a whole number");
+        }
+        return num1/num2;
+}
 
 
 //(2nd method to create) int multiply(int num1, num2) calculates num1*num2
-
+public int multiply(int num1, int nuum2) {
+        int result = 0;
+        for(int i = 0; i < num2; i++) {
+            result += num1;
+        }
+        return result;
+}
 //(3rd method to create) int power(int num1, num2); calculates num1 to the power of num2
 
 //You may not use the multiply or divide operators, or methods that calculate the results for you (use loops to do the calculation)
