@@ -12,13 +12,13 @@ public class group {
     }
 
     // fill in
-    public static String getName() {
+    public static String getNameRana() {
         return "Keyur Rana";
     }
 
     // fill in
     public static String getName() {
-        return "";
+        return "Vrajesh Patel";
     }
 
     // fill in
@@ -32,7 +32,7 @@ public class group {
     }
 
     public static String getGroupMembers() {
-        return getNamePham() + ", " + getName() + ", " + getName() + ", " + getName();
+        return getNamePham() + ", " + getNameRana() + ", " + getName() + ", " + getName() + ", " + getName();
     }
 
 
