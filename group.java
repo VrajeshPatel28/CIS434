@@ -17,7 +17,7 @@ public class group {
     }
 
     // fill in
-    public static String getName() {
+    public static String getNamePatelV() {
         return "Vrajesh Patel";
     }
 
@@ -32,7 +32,7 @@ public class group {
     }
 
     public static String getGroupMembers() {
-        return getNamePham() + ", " + getNameRana() + ", " + getName() + ", " + getName() + ", " + getName();
+        return getNamePham() + ", " + getNameRana() + ", " + getNamePatelV() + ", " + getName() + ", " + getName();
     }
 
 
