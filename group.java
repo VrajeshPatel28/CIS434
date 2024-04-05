@@ -35,12 +35,15 @@ public class group {
         return getNamePham() + ", " + getNameRana() + ", " + getNamePatelV() + ", " + getName() + ", " + getName();
     }
 
+    private int num2;
+    private int num;
+
 
 //(1st method to create) int divide(int num1, int num2) calculates integer division num1/num2, 
 // should throw an Arithmetic exception if num2 is 0, or the result of num1/num2 is not a whole number.
 public int divide(int num1, int num2){
         if (num == 0 || num1 % num2 != 0) {
-            throw new ArithmeticExecption("Cannot divide by 0 or result is nit a whole number");
+            throw new ArithmeticException("Cannot divide by 0 or result is nit a whole number");
         }
         return num1/num2;
 }
