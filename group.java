@@ -4,6 +4,8 @@
 
 // Add a method called getGroupMembers that returns the names of all group members, 
 // (each member should add their own names to the method).
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class group {
     
@@ -24,7 +26,7 @@ public class group {
 
     // fill in
     public static String getNameOP() {
-        return "Om Patel;";
+        return "Om Patel";
     }
 
     //fill in
@@ -46,7 +48,13 @@ public int divide(int num1, int num2){
         if (num == 0 || num1 % num2 != 0) {
             throw new ArithmeticException("Cannot divide by 0 or result is nit a whole number");
         }
-        return num1/num2;
+        int result =0;
+        int sum = num1;
+        while (sum>=num2){
+            sum-=num2;
+            result++;
+        }
+        return result;
 }
 
 
@@ -56,14 +64,56 @@ public int multiply(int num1, int nuum2) {
         for(int i = 0; i < num2; i++) {
             result += num1;
         }
-        return result;
+        return num2<0 ? -result : result;
 }
 //(3rd method to create) int power(int num1, num2); calculates num1 to the power of num2
+public int power(int num1, int num2) {
+    if (num2 == 0){
+        return 1; //any num to power of 0 is 1
+    }
+    int powResult = 1;
+    for (int i = 0, i < num2; i++){
+        powResult = multiply(powResult, num1);
+    }
+    return powResult;
+    }
 
 //You may not use the multiply or divide operators, or methods that calculate the results for you (use loops to do the calculation)
-
-
 // Add unit tests to verify all methods work correctly
+
+    public class GroupTest {
+        private Group group = new Group();
+
+        @Test
+        public void testMultiply() {
+            assertEquals(20, group.multiply(4, 5));
+            assertEquals(-20, group.multiply(4, -5));
+            assertEquals(0, group.multiply(0, 5));
+        }
+
+        @Test
+        public void testDivide() {
+            assertEquals(4, group.divide(20, 5));
+        }
+
+        @Test(expected = ArithmeticException.class)
+        public void testDivideByZero() {
+            group.divide(20, 0);
+        }
+
+        @Test(expected = ArithmeticException.class)
+        public void testDivideNonWholeNumber() {
+            group.divide(20, 3);
+        }
+
+        @Test
+        public void testPower() {
+            assertEquals(32, group.power(2, 5));
+            assertEquals(1, group.power(5, 0));
+            assertEquals(1, group.power(-1, 0)); // Edge case for negative base with 0 exponent
+            assertEquals(0, group.power(0, 3)); // Edge case for 0 base with positive exponent
+        }
+    }
 
 // Add a jenkins file to the project to allow the use of jenkins for the project.  
 // You do not need to turn in any documentation showing jenkins working, 
