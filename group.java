@@ -24,7 +24,7 @@ public class group {
 
     // fill in
     public static String getNameOP() {
-        return "Om Patel;";
+        return "Om Patel";
     }
 
     //fill in
