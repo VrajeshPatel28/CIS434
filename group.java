@@ -6,6 +6,7 @@
 // (each member should add their own names to the method).
 
 public class group {
+    
 
     public static String getNamePham() {
         return "Andrew Pham";
@@ -22,8 +23,8 @@ public class group {
     }
 
     // fill in
-    public static String getName() {
-        return "";
+    public static String getNameOP() {
+        return "Om Patel;";
     }
 
     //fill in
@@ -32,7 +33,7 @@ public class group {
     }
 
     public static String getGroupMembers() {
-        return getNamePham() + ", " + getNameRana() + ", " + getNamePatelV() + ", " + getName() + ", " + getName();
+        return getNamePham() + ", " + getNameRana() + ", " + getNamePatelV() + ", " + getNameOP() + ", " + getName();
     }
 
     private int num2;
