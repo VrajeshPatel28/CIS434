@@ -24,16 +24,16 @@ public class group {
 
     // fill in
     public static String getNameOP() {
-        return "Om Patel;";
+        return "Om Patel";
     }
 
     //fill in
-    public static String getName() {
-        return "";
+    public static String getNameNP() {
+        return "Nihar Patel";
     }
 
     public static String getGroupMembers() {
-        return getNamePham() + ", " + getNameRana() + ", " + getNamePatelV() + ", " + getNameOP() + ", " + getName();
+        return getNamePham() + ", " + getNameRana() + ", " + getNamePatelV() + ", " + getNameOP() + ", " + getNameNP();
     }
 
     private int num2;
