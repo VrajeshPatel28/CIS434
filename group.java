@@ -72,7 +72,7 @@ public int power(int num1, int num2) {
         return 1; //any num to power of 0 is 1
     }
     int powResult = 1;
-    for (int i = 0, i < num2; i++){
+    for (int i = 0; i < num2; i++){
         powResult = multiply(powResult, num1);
     }
     return powResult;
